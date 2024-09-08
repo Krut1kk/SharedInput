@@ -1,0 +1,224 @@
+$grayColor: #d1d1d6;
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 64px;
+  width: 100%;
+  font-family: "Inter";
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #1a1a1e;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid $grayColor;
+  border-radius: 4px;
+}
+
+.inputWrapperBorderDisabled {
+  border-width: 0px;
+
+  &:hover {
+    border-width: 1px;
+  }
+}
+
+.input {
+  gap: 8px;
+  border: none;
+  width: 100%;
+  color: #1a1a1e;
+  background-color: transparent;
+  text-overflow: ellipsis;
+
+  &::placeholder {
+    color: #70707b;
+  }
+}
+
+.disabled {
+  background-color: transparent;
+  color: $grayColor;
+  cursor: not-allowed;
+
+  &::placeholder {
+    color: $grayColor;
+  }
+}
+
+// .placeholderSmall {
+//   &::placeholder {
+//     font-size: 12px;
+//   }
+// }
+
+.iconError {
+  svg {
+    path {
+      stroke: #d92d20;
+    }
+  }
+}
+
+.iconDisabled {
+  svg {
+    path {
+      stroke: $grayColor;
+    }
+  }
+}
+
+.focused {
+  border-color: #84caff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+.error {
+  border-color: #fda29b;
+}
+
+.errorFocus {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 4px rgba(255, 77, 79, 0.4);
+}
+
+.hint {
+  font-size: 12px;
+  color: #51525c;
+}
+.medium {
+  height: 36px;
+  padding: 8px 12px;
+}
+
+.small {
+  height: 24px;
+  padding: 0px 12px;
+}
+
+.large {
+  height: 40px;
+  padding: 8px 12px 8px 16px;
+}
+.extraLarge {
+  height: 48px;
+  padding: 8px 12px 12px 16px;
+}
+.icon {
+  display: flex;
+  cursor: pointer;
+}
+
+.required {
+  color: #d92d1f;
+}
+
+.shortKeyIcon {
+  cursor: pointer;
+  display: flex;
+}
+
+.textSmall {
+  font-size: 12px;
+}
+
+.textLarge {
+  font-size: 14px;
+}
+
+.grayText {
+  color: $grayColor;
+}
+
+.placeHolderSmall {
+  font-size: 12px;
+}
+
+.placeHolderMedium {
+  font-size: 14px;
+}
+.errorText {
+  color: #d92d20;
+}
+
+.darkModeLabel {
+  color: #fafafa;
+}
+
+.darkModeInputWrapper {
+  border-color: #51525c;
+}
+
+.darkModeInput {
+  color: #fafafa;
+}
+
+.darkModeHint {
+  color: #a0a0ab;
+}
+
+.darkModeIcon {
+  svg {
+    path {
+      stroke: #70707b;
+    }
+  }
+}
+
+.darkModeInputWrapperFocus {
+  border-color: #53b1fd;
+  box-shadow: 0px 0px 0px 4px #2e90fa3d;
+}
+
+.darkModeInputWrapperError {
+  border-color: #f97066;
+}
+
+.darkModeInputWrapperErrorFocus {
+  border-color: #f97066;
+  box-shadow: 0px 0px 0px 4px #f044383d;
+}
+
+.darkModeErrorText {
+  color: #f97066;
+}
+
+.darkModeDisabledLabel {
+  color: #a0a0ab;
+}
+
+.darkModeDisabledInput {
+  color: #3f3f46;
+  cursor: not-allowed;
+}
+
+.darkModeDisabledHint {
+  color: #3f3f46;
+}
+
+.darkModeInputWrapperDisabled {
+  cursor: not-allowed;
+}
+
+.darkModeShortKeyIcon {
+  svg {
+    path:nth-child(1) {
+      stroke: #3f3f46;
+    }
+
+    path:nth-child(2) {
+      fill: rgb(160, 160, 171);
+    }
+  }
+}
